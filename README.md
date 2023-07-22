@@ -1,1 +1,1 @@
-# hackathon-emsi
+# Hackathon-EMSI
