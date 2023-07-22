@@ -1,0 +1,20 @@
+{
+  "name": "hackathon-emsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --open=src/html/ --host=0.0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasbouabid/hackathon-emsi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anasbouabid/hackathon-emsi/issues"
+  },
+  "homepage": "https://github.com/anasbouabid/hackathon-emsi#readme"
+}
