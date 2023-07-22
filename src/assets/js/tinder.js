@@ -28,18 +28,29 @@ function appendCard(data) {
     const firstCard = frame.children[0]
     const newCard = document.createElement('div')
     newCard.className = 'tinder-card'
-    newCard.style.backgroundImage = `url(${data.img})`
+    // newCard.style.backgroundImage = `url(${data.img})`
     newCard.innerHTML = `
-          <div class="is-like">LIKE</div>
-          <div class="bottom">
-            <div class="title">
-              <span>${data.name}</span>
-              <!--<span>${data.speciality}</span>-->
+        <div class="is-like"></div>
+        <div class="bottom">
+            <img class="offer-logo" src="${data.img}" alt="offer logo">
+            <div class="offer-title w-100 d-flex align-items-center justify-content-between">
+                <h3>Google</h3>
+                <h5>PFE</h5>
             </div>
-            <div class="info">
-              <span>${data.speciality}</span>
+            <div class="offer-info w-100 d-flex align-items-center justify-content-between">
+                <h5>Remote (3 months)</h5>
+                <h5>25OO DH</h5>
             </div>
-          </div>
+            <h2 class="offer-position">Software Engineer</h2>
+            <p class="offer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eius eum ipsa laboriosam laborum molestiae mollitia quam quasi repudiandae voluptatibus? Autem, corporis dolore dolores ipsam ipsum optio quasi sequi sunt.</p>
+            <div class="offer-tags">
+                <span>Java</span> <span>Spring boot</span>
+                <span>Java</span> <span>Spring boot</span>
+                <span>Java</span> <span>Spring boot</span>
+                <span>Java</span> <span>Spring boot</span>
+                <span>Java</span> <span>Spring boot</span>
+            </div>
+        </div>
         `
     if (firstCard) frame.insertBefore(newCard, firstCard)
     else frame.appendChild(newCard)
@@ -52,7 +63,7 @@ function initCard(card) {
 
 function setTransform(x, y, deg, duration) {
     current.style.transform = `translate3d(${x}px, ${y}px, 0) rotate(${deg}deg)`
-    likeText.style.opacity = Math.abs((x / innerWidth * 2.1))
+    likeText.style.opacity = Math.abs((x / innerWidth * 5.1))
     likeText.className = `is-like ${x > 0 ? 'like' : 'nope'}`
     if (duration) current.style.transition = `transform ${duration}ms`
 }
