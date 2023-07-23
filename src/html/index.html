@@ -163,6 +163,9 @@
                   <th class="border-bottom-0">
                     <h6 class="fw-semibold mb-0">Gratification(Salary)</h6>
                   </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Prep Plan</h6>
+                  </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -185,6 +188,11 @@
                   <td class="border-bottom-0">
                     <p class="mb-0 fw-normal">2500 DH</p>
                   </td>
+                  <td class="border-bottom-0">
+                    <span data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="switchCV('https://anasbouabid.github.io/CV/Resume-BOUABID_ANAS.pdf')">
+                      <i class="ti ti-file-description" style="font-size: 25px;"></i>
+                    </span>
+                  </td>
                 </tr>
                 <tr>
                   <td class="border-bottom-0">
@@ -205,6 +213,11 @@
                   <td class="border-bottom-0">
                     <p class="mb-0 fw-normal">2500 DH</p>
                   </td>
+                  <td class="border-bottom-0">
+                    <span data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="switchCV('https://anasbouabid.github.io/CV/Resume-BOUABID_ANAS.pdf')">
+                      <i class="ti ti-file-description" style="font-size: 25px;"></i>
+                    </span>
+                  </td>
                 </tr>
                 </tbody>
               </table>
@@ -214,24 +227,76 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Prep Plan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card w-100">
+            <div class="card-body p-4">
+              <ul class="timeline-widget mb-0 position-relative mb-n5">
+                <li class="timeline-item d-flex position-relative overflow-hidden">
+                  <div class="timeline-time text-dark flex-shrink-0 text-end">1</div>
+                  <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                    <span class="timeline-badge border-2 border border-primary flex-shrink-0 my-8"></span>
+                    <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                  </div>
+                  <div class="timeline-desc fs-3 text-dark mt-n1">Step 1 test test</div>
+                </li>
+                <li class="timeline-item d-flex position-relative overflow-hidden">
+                  <div class="timeline-time text-dark flex-shrink-0 text-end">2</div>
+                  <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                    <span class="timeline-badge border-2 border border-info flex-shrink-0 my-8"></span>
+                    <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                  </div>
+                  <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Step 1 test test</a>
+                  </div>
+                </li>
+                <li class="timeline-item d-flex position-relative overflow-hidden">
+                  <div class="timeline-time text-dark flex-shrink-0 text-end">3</div>
+                  <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                    <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                    <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                  </div>
+                  <div class="timeline-desc fs-3 text-dark mt-n1">Step 1 test test</div>
+                </li>
+                <li class="timeline-item d-flex position-relative overflow-hidden">
+                  <div class="timeline-time text-dark flex-shrink-0 text-end">4</div>
+                  <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                    <span class="timeline-badge border-2 border border-warning flex-shrink-0 my-8"></span>
+                    <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                  </div>
+                  <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Step 1 test test</div>
+                </li>
+                <li class="timeline-item d-flex position-relative overflow-hidden">
+                  <div class="timeline-time text-dark flex-shrink-0 text-end">5</div>
+                  <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                    <span class="timeline-badge border-2 border border-danger flex-shrink-0 my-8"></span>
+                    <span class="timeline-badge-border d-block flex-shrink-0"></span>
+                  </div>
+                  <div class="timeline-desc fs-3 text-dark mt-n1 fw-semibold">Step 1 test test</div>
+                </li>
+                <li class="timeline-item d-flex position-relative overflow-hidden">
+                  <div class="timeline-time text-dark flex-shrink-0 text-end">6</div>
+                  <div class="timeline-badge-wrap d-flex flex-column align-items-center">
+                    <span class="timeline-badge border-2 border border-success flex-shrink-0 my-8"></span>
+                  </div>
+                  <div class="timeline-desc fs-3 text-dark mt-n1">Step 1 test test</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Approve</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
