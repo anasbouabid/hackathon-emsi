@@ -1,6 +1,6 @@
 let imgCount = 0
 const data = [
-    {company: "", title: "", type: "", attendance:"", period:"", logo: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png"},
+    {company: "IBM", title: "Devops Engineer", type: "PFE", attendance:"Hybrid", period:"6 months", gratification: "4000DH", tags: ["DevOps", "Java", "Docker", "kubernetes", "Jenkins", "Pipelines", "Bash", "Cloud", "Python"], description: "Assist the product manager / senior architect in the initial DevOps assessmentAssist the product manager / senior architect in the design of the Tool Chain and its integrationAssist Client in setting up and integrating the tool chain, /tests. Has knowledge of software engineering processes, coding (Java, Shell, Python), DevOps best practices", logo: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png"},
 ]
 const frame = document.body.querySelector('.frame')
 data.forEach(_data => appendCard(_data))
@@ -29,23 +29,19 @@ function appendCard(data) {
     newCard.innerHTML = `
         <div class="is-like"></div>
         <div class="bottom">
-            <img class="offer-logo" src="${data.img}" alt="offer logo">
+            <img class="offer-logo" src="${data.logo}" alt="offer logo">
             <div class="offer-title w-100 d-flex align-items-center justify-content-between">
-                <h3>Google</h3>
-                <h5>PFE</h5>
+                <h3>${data.company}</h3>
+                <h5>${data.type}</h5>
             </div>
             <div class="offer-info w-100 d-flex align-items-center justify-content-between">
-                <h5>Remote (3 months)</h5>
-                <h5>25OO DH</h5>
+                <h5>${data.attendance} (${data.period})</h5>
+                <h5>${data.gratification}</h5>
             </div>
-            <h2 class="offer-position">Software Engineer</h2>
-            <p class="offer-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eius eum ipsa laboriosam laborum molestiae mollitia quam quasi repudiandae voluptatibus? Autem, corporis dolore dolores ipsam ipsum optio quasi sequi sunt.</p>
+            <h2 class="offer-position">${data.title}</h2>
+            <p class="offer-description">${data.description}</p>
             <div class="offer-tags">
-                <span>Java</span> <span>Spring boot</span>
-                <span>Java</span> <span>Spring boot</span>
-                <span>Java</span> <span>Spring boot</span>
-                <span>Java</span> <span>Spring boot</span>
-                <span>Java</span> <span>Spring boot</span>
+                ${data.tags.map(e => "<span>"+e+"</span>")}
             </div>
         </div>
         `
