@@ -1,9 +1,6 @@
 let imgCount = 0
 const data = [
-    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas1', speciality: "Backend Software Engineering", data: {}},
-    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas2', speciality: "Fullstack software engineer", data: {}},
-    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas3', speciality: "Software Engineer", data: {}},
-    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas4', speciality: "ML Engineer", data: {}}
+    {company: "", title: "", type: "", attendance:"", period:"", logo: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png"},
 ]
 const frame = document.body.querySelector('.frame')
 data.forEach(_data => appendCard(_data))
