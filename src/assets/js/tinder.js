@@ -1,9 +1,9 @@
 let imgCount = 0
 const data = [
-    {img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Bill_Gates_-_Nov._8%2C_2019.jpg/640px-Bill_Gates_-_Nov._8%2C_2019.jpg", name: 'Anas1', speciality: "Backend Software Engineering", data: {}},
-    {img: "https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg", name: 'Anas2', speciality: "Fullstack software engineer", data: {}},
-    {img: "https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg", name: 'Anas3', speciality: "Software Engineer", data: {}},
-    {img: "https://www.andrewng.org/static/c5eb39b8da664718384eefcbc915f5cd/5ee5f/andrew-ng-homepage.jpg", name: 'Anas4', speciality: "ML Engineer", data: {}}
+    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas1', speciality: "Backend Software Engineering", data: {}},
+    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas2', speciality: "Fullstack software engineer", data: {}},
+    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas3', speciality: "Software Engineer", data: {}},
+    {img: "https://www.pngall.com/wp-content/uploads/13/Google-Logo-PNG-Images.png", name: 'Anas4', speciality: "ML Engineer", data: {}}
 ]
 const frame = document.body.querySelector('.frame')
 data.forEach(_data => appendCard(_data))
